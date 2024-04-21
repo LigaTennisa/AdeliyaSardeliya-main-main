@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Теннисные корты в Тюмени</title>
+    <style>
+        .court-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	{% comment %} <link rel="stylesheet" href="{% static 'css/myprofile.css'%}" type="text/css"> {% endcomment %}
+	<script src="{% static 'js/app.js' %}" defer></script>	
+	<!-- для мобильной версии сайта -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+	<body >
+		<title>Таблица расписания</title>
+		<link rel="stylesheet" href="{% static 'css/sophi.css'%}" type="text/css">
+	   <div class="timetable">
+		 <div class="header">
+		   <h1>Еженедельное расписание</h1>
+		 </div>
+		 <div class="timetable-grid">
+			<div class="time-slots">
+				<div class="time-slot">Время</div>
+				<div class="time-slot">8:30</div>
+				<div class="time-slot">10:00 </div>
+				<div class="time-slot">11:30 </div>
+				<div class="time-slot">13:00</div>
+				<div class="time-slot">14:30 </div>
+				<div class="time-slot">16:00</div>
+				<div class="time-slot">17:30 </div>
+				<div class="time-slot">19:00</div>
+			  </div>
+		   <div class="days">
+             <div class="day">Понедельник
+			 </div>
+			 <div class="day">Вторник</div>
+			 <div class="day">Среда</div>
+			 <div class="day">Четверг</div>
+			 <div class="day">Пятница</div>
+			 <div class="day">Суббота</div>
+			 <div class="day">Воскресенье</div>
+		   </div>
+		   <div class="days">
+			<div class="day">группа от трех лет
+			</div>
+			<div class="day">свободный корт</div>
+			<div class="day">Среда</div>
+			<div class="day">Четверг</div>
+			<div class="day">Пятница</div>
+			<div class="day">Суббота</div>
+			<div class="day">Воскресенье</div>
+		  </div>
+		   
+		 </div>
+	   </div>
+	</body>
+{% endblock content %}
